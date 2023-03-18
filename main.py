@@ -1,7 +1,6 @@
 import gym
 import json
 import datetime as dt
-
 from stable_baselines.common.policies import MlpPolicy
 from stable_baselines.common.vec_env import DummyVecEnv
 from stable_baselines import PPO2
@@ -10,8 +9,13 @@ from env.StockTradingEnv import StockTradingEnv
 
 import pandas as pd
 
-df = pd.read_csv('./data/AAPL.csv')
-df = df.sort_values('Date')
+# df = pd.read_csv('./data/AAPL.csv')
+# df = df.sort_values('Date')
+BTC = pd.read_csv("data/CBSE_BTC_clean1.csv")
+BTC = BTC.loc[:, "timestamp": "volume"]
+BTC = BTC.rename(columns={"open":"Open", "high": "High", "low": "Low", "close": "Close", "volume": "Volume"})
+
+df = BTC
 
 # The algorithms require a vectorized environment to run
 env = DummyVecEnv([lambda: StockTradingEnv(df)])
