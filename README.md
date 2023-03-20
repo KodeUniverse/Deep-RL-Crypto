@@ -6,8 +6,22 @@ Inspired by https://github.com/notadamking/Stock-Trading-Environment, this is an
 
 ## Python
 
-Clone this repository
-<section>git clone https://github.com/KodeUniverse/Deep-RL-Crypto.git</section>
-<section>cd Deep-RL-Crypto</section>
 
-<section>pip install -r requirements.txt</section>
+
+Clone this repository
+
+```BASH
+git clone https://github.com/KodeUniverse/Deep-RL-Crypto.git
+cd Deep-RL-Crypto
+```
+
+It is recommended to use a virtualenv
+```BASH
+virtualenv venv
+pip install -r requirements.txt
+```
+
+# Usage
+
+Run main.py after requirements are installed.
+
