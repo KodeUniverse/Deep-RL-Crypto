@@ -6,8 +6,6 @@ Inspired by https://github.com/notadamking/Stock-Trading-Environment, this is an
 
 ## Python
 
-
-
 Clone this repository
 
 ```BASH
@@ -18,6 +16,7 @@ cd Deep-RL-Crypto
 It is recommended to use a virtualenv
 ```BASH
 virtualenv venv
+activate venv
 pip install -r requirements.txt
 ```
 
