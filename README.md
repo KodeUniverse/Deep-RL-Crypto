@@ -16,7 +16,8 @@ cd Deep-RL-Crypto
 It is recommended to use a virtualenv
 ```BASH
 virtualenv venv
-activate venv
+#activate the venv
+source /path/to/venv/bin/activate
 pip install -r requirements.txt
 ```
 
