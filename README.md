@@ -17,7 +17,7 @@ It is recommended to use a virtualenv
 ```BASH
 virtualenv venv
 #activate the venv
-source /path/to/venv/bin/activate
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
