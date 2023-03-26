@@ -19,6 +19,9 @@ It is recommended to use a virtualenv
 virtualenv venv --python="/usr/bin/python3.7"
 #activate the venv
 source venv/bin/activate
+
+#downgrade setuptools version
+pip install --upgrade setuptools==66
 pip install -r requirements.txt
 ```
 
