@@ -4,14 +4,16 @@ import gym
 from gym import spaces
 import pandas as pd
 import numpy as np
+import csv
 
 MAX_ACCOUNT_BALANCE = 2147483647
 MAX_NUM_SHARES = 2147483647
-MAX_SHARE_PRICE = 5000
+#MAX_SHARE_PRICE = 5000
+MAX_SHARE_PRICE = 100_000
 MAX_OPEN_POSITIONS = 5
 MAX_STEPS = 20000
 
-INITIAL_ACCOUNT_BALANCE = 10000
+INITIAL_ACCOUNT_BALANCE = 1_000_000
 
 
 class StockTradingEnv(gym.Env):
@@ -142,3 +144,9 @@ class StockTradingEnv(gym.Env):
         print(
             f'Net worth: {self.net_worth} (Max net worth: {self.max_net_worth})')
         print(f'Profit: {profit}')
+        
+        file = open("output/networth.csv", "a+", newline='')
+        file.write(f'{self.net_worth}\n')
+        file.close()
+
+
