@@ -4,7 +4,8 @@ Inspired by https://github.com/notadamking/Stock-Trading-Environment, this is an
 
 # Installation
 
-## Python
+## Python 3.7
+### (Does not support Python 3.8+)
 
 Clone this repository
 
