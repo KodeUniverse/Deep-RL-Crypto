@@ -50,14 +50,16 @@ class StockTradingEnv(gym.Env):
         ])
 
         # Append additional data and scale each value to between 0-1
-        obs = np.append(frame, [[
+        append_arr = [[
             self.balance / MAX_ACCOUNT_BALANCE,
             self.max_net_worth / MAX_ACCOUNT_BALANCE,
             self.shares_held / MAX_NUM_SHARES,
             self.cost_basis / MAX_SHARE_PRICE,
             self.total_shares_sold / MAX_NUM_SHARES,
             self.total_sales_value / (MAX_NUM_SHARES * MAX_SHARE_PRICE),
-        ]], axis=0)
+        ]]
+
+        obs = np.append(frame, append_arr, axis=0)
 
         return obs
 
@@ -148,5 +150,3 @@ class StockTradingEnv(gym.Env):
         file = open("output/networth.csv", "a+", newline='')
         file.write(f'{self.net_worth}\n')
         file.close()
-
-
