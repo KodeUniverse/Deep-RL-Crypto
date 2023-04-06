@@ -1,5 +1,5 @@
 # Deep Reinforcement Learning in Crypto Trading
-
+### Senior Design Project 2022-2023
 Inspired by https://github.com/notadamking/Stock-Trading-Environment, this is an implementation of deep reinforcement learning for cryptocurrency algorithmic trading.
 
 # Installation
