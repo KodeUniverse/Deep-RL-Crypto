@@ -5,7 +5,7 @@
 <img src="screenshots/RL-agents.png"/>
 </p>
 
-Inspired by https://github.com/notadamking/Stock-Trading-Environment, this is an implementation of deep reinforcement learning for cryptocurrency algorithmic trading.
+Inspired by https://github.com/notadamking/Stock-Trading-Environment, this is an implementation of deep reinforcement learning for cryptocurrency algorithmic trading. Code for the setup of the gym environment was adapted from Adam King's repo.
 
 # Installation
 
